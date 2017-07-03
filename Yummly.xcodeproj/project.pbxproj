@@ -15,6 +15,15 @@
 		DBB7613C1F05E45B005EB98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB7613A1F05E45B005EB98C /* LaunchScreen.storyboard */; };
 		DBB761471F05E45B005EB98C /* YummlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761461F05E45B005EB98C /* YummlyTests.swift */; };
 		DBB761521F05E45B005EB98C /* YummlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761511F05E45B005EB98C /* YummlyUITests.swift */; };
+		DBB761621F05EC54005EB98C /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761601F05EC54005EB98C /* Const.swift */; };
+		DBB761631F05EC54005EB98C /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761611F05EC54005EB98C /* Observable+ObjectMapper.swift */; };
+		DBB7616A1F05EC6E005EB98C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761651F05EC6E005EB98C /* BaseModel.swift */; };
+		DBB7616B1F05EC6E005EB98C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761661F05EC6E005EB98C /* BaseNavigationController.swift */; };
+		DBB7616C1F05EC6E005EB98C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761671F05EC6E005EB98C /* BaseViewController.swift */; };
+		DBB7616D1F05EC6E005EB98C /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761681F05EC6E005EB98C /* BaseViewModel.swift */; };
+		DBB7616E1F05EC6E005EB98C /* BaseWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB761691F05EC6E005EB98C /* BaseWKWebViewController.swift */; };
+		DBB761991F05EC85005EB98C /* YummlyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7618C1F05EC85005EB98C /* YummlyAPI.swift */; };
+		DBB7619D1F05F03F005EB98C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB7619C1F05F03F005EB98C /* APIConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		DBB7614D1F05E45B005EB98C /* YummlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YummlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB761511F05E45B005EB98C /* YummlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YummlyUITests.swift; sourceTree = "<group>"; };
 		DBB761531F05E45B005EB98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB761601F05EC54005EB98C /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		DBB761611F05EC54005EB98C /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DBB761651F05EC6E005EB98C /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		DBB761661F05EC6E005EB98C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DBB761671F05EC6E005EB98C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DBB761681F05EC6E005EB98C /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DBB761691F05EC6E005EB98C /* BaseWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWKWebViewController.swift; sourceTree = "<group>"; };
+		DBB7618C1F05EC85005EB98C /* YummlyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlyAPI.swift; sourceTree = "<group>"; };
+		DBB7619C1F05F03F005EB98C /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +133,10 @@
 			children = (
 				DBB761311F05E45B005EB98C /* AppDelegate.swift */,
 				DBB761331F05E45B005EB98C /* ViewController.swift */,
+				DBB7615F1F05EC54005EB98C /* Common */,
+				DBB761641F05EC6E005EB98C /* Base */,
+				DBB7616F1F05EC85005EB98C /* Medule */,
+				DBB7618B1F05EC85005EB98C /* Request */,
 				DBB761351F05E45B005EB98C /* Main.storyboard */,
 				DBB761381F05E45B005EB98C /* Assets.xcassets */,
 				DBB7613A1F05E45B005EB98C /* LaunchScreen.storyboard */,
@@ -139,6 +161,43 @@
 				DBB761531F05E45B005EB98C /* Info.plist */,
 			);
 			path = YummlyUITests;
+			sourceTree = "<group>";
+		};
+		DBB7615F1F05EC54005EB98C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DBB761601F05EC54005EB98C /* Const.swift */,
+				DBB761611F05EC54005EB98C /* Observable+ObjectMapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DBB761641F05EC6E005EB98C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DBB761651F05EC6E005EB98C /* BaseModel.swift */,
+				DBB761661F05EC6E005EB98C /* BaseNavigationController.swift */,
+				DBB761671F05EC6E005EB98C /* BaseViewController.swift */,
+				DBB761681F05EC6E005EB98C /* BaseViewModel.swift */,
+				DBB761691F05EC6E005EB98C /* BaseWKWebViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DBB7616F1F05EC85005EB98C /* Medule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medule;
+			sourceTree = "<group>";
+		};
+		DBB7618B1F05EC85005EB98C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DBB7618C1F05EC85005EB98C /* YummlyAPI.swift */,
+				DBB7619C1F05F03F005EB98C /* APIConfig.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		DC86B48141171EF34CCC4A60 /* Frameworks */ = {
@@ -337,8 +396,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB761631F05EC54005EB98C /* Observable+ObjectMapper.swift in Sources */,
 				DBB761341F05E45B005EB98C /* ViewController.swift in Sources */,
+				DBB7619D1F05F03F005EB98C /* APIConfig.swift in Sources */,
+				DBB7616E1F05EC6E005EB98C /* BaseWKWebViewController.swift in Sources */,
+				DBB7616B1F05EC6E005EB98C /* BaseNavigationController.swift in Sources */,
 				DBB761321F05E45B005EB98C /* AppDelegate.swift in Sources */,
+				DBB761621F05EC54005EB98C /* Const.swift in Sources */,
+				DBB761991F05EC85005EB98C /* YummlyAPI.swift in Sources */,
+				DBB7616D1F05EC6E005EB98C /* BaseViewModel.swift in Sources */,
+				DBB7616C1F05EC6E005EB98C /* BaseViewController.swift in Sources */,
+				DBB7616A1F05EC6E005EB98C /* BaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +659,7 @@
 				DBB761581F05E45B005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBB761591F05E45B005EB98C /* Build configuration list for PBXNativeTarget "YummlyTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +668,7 @@
 				DBB7615B1F05E45B005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBB7615C1F05E45B005EB98C /* Build configuration list for PBXNativeTarget "YummlyUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +677,7 @@
 				DBB7615E1F05E45B005EB98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
